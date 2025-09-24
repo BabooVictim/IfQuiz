@@ -1,0 +1,180 @@
+[
+    {
+        "hint": "der '==' Operator wird gebraucht um zu überprüfen, ob zwei Werte identisch sind.",
+        "question": "name = \"Nico\"",
+        "answers": [
+            {
+                "answer": "if(name == \"Nico\")",
+                "correct": true
+            },
+            {
+                "answer": "if(name == \"nico\")",
+                "correct": false
+            },
+            {
+                "answer": "if(name == \"Jonas\")",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "hint": "Zum Vergleichen von Werten, können somit auch < und > verwendet werden, um zu überprüfen, ob ein Wert grösser oder kleiner als ein anderer Wert ist.",
+        "question": "temperatur = 22",
+        "answers": [
+            {
+                "answer": "if(temperatur < 0)",
+                "correct": false
+            },
+            {
+                "answer": "if(temperatur < 40)",
+                "correct": true
+            },
+            {
+                "answer": "if(temperatur < 20)",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "hint": "Die Operatoren können auch folgendermassen kombiniert werden: <= (überprüfen ob kleiner oder gleich als), >= (grösser oder gleich als)",
+        "question": "alter = 17",
+        "answers": [
+            {
+                "answer": "if(alter >= 12)",
+                "correct": true
+            },
+            {
+                "answer": "if(alter <= 12)",
+                "correct": false
+            },
+            {
+                "answer": "if(alter >= 18)",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "hint": "Es können auch Mathematische Operationen in einer If-Kondition gebraucht werden.",
+        "question": "highscore = 100 \n multiplier = 2",
+        "answers": [
+            {
+                "answer": "if(100 < highscore * multiplier)",
+                "correct": true
+            },
+            {
+                "answer": "if(highscore * multiplier > 200)",
+                "correct": false
+            },
+            {
+                "answer": "if(highscore < multiplier)",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "hint": "Mehrere Konditionen können mit UND (&&) oder ODER (||) kombiniert werden. Dies führt dazu, dass man anstatt 2, nur ein Resultat bekommt. wenn ich also mit ODER (||) zwei Konditionen kombiniere und mindestens eine davon erfüllt ist, wird das resultat somit auch erfüllt sein \n\n z.B. \n if(1 == 1 || 1 == 2) - Erfüllt, da '1 == 1' ODER '1 == 2' erfüllt ist.",
+        "question": "alter = 25",
+        "answers": [
+            {
+                "answer": "if(alter > 10 && alter < 20)",
+                "correct": false
+            },
+            {
+                "answer": "if(alter > 10 || alter < 20)",
+                "correct": true
+            },
+            {
+                "answer": "if(alter < 25 && alter > 20)",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "hint": "Das Ausrufezeichen '!' wird gebraucht um den Wert einer Kondition 'umzudrehen'. Aus einer gültigen Kondition, würde also eine ungültige entstehen, falls diese ein ! am Anfang beinhaltet. \n\n z.B. \n if(!true) - Wird nicht erfüllt",
+        "question": "regnet_es = true \n ist_es_kalt = false",
+        "answers": [
+            {
+                "answer": "if(regnet_es && ist_es_kalt)",
+                "correct": false
+            },
+            {
+                "answer": "if(!regnet_es)",
+                "correct": false
+            },
+            {
+                "answer": "if(!ist_es_kalt && regnet_es)",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "hint": "Das Ausrufezeichen '!' kann auch beim Vergleichen von zwei Werten (==) verwendet werden. Dies sieht so aus: != und würde die zwei Werte auf ungleichheit überprüfen.",
+        "question": "vip = \"Martin\"",
+        "answers": [
+            {
+                "answer": "if(vip != \"martin\")",
+                "correct": true
+            },
+            {
+                "answer": "if(vip == \"martin\")",
+                "correct": false
+            },
+            {
+                "answer": "if(vip == true)",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "hint": "Die Reihenfolge in welcher die Kondition aufgelöst wird, ist auch wichtig zu beachten. \nBeispiel: if(10 * 10 == 100 || 10 / 1 == 100)) \n\n 1. Es werden zuerst die Mathematische Operatoren ausgeführt. Dies würde gekürzt so aussehen: \n if(100 == 100 || 10 == 100) \n 2. Dannach wird überprüft, ob die Konditionen erfüllt sind: \n if(true || false) \n 3. Am Schluss werden noch die Operatoren in der Kondition aufgelöst: \n if(true)",
+        "question": "x = 1 \n y = 5",
+        "answers": [
+            {
+                "answer": "if(5 * x != y || x < y)",
+                "correct": true
+            },
+            {
+                "answer": "if(y + y == y * 2 && y < 2)",
+                "correct": false
+            },
+            {
+                "answer": "if(y < x && x * y == y)",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "x = 3 \n y = 2 \n z = 5",
+        "answers": [
+            {
+                "answer": "if((x + y) * z != 25 && !false)",
+                "correct": false
+            },
+            {
+                "answer": "if(!false || z == y * x)",
+                "correct": true
+            },
+            {
+                "answer": "if(z + 1 == z + z || !false == !true)",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "x = 10 \n y = 1",
+        "answers": [
+            {
+                "answer": "if(x * y = x && !true)",
+                "correct": false
+            },
+            {
+                "answer": "if(x - 1 * (x * y) != 0)",
+                "correct": false
+            },
+            {
+                "answer": "if(x * y == x || x * y < y * x)",
+                "correct": true
+            }
+        ]
+    }
+]
